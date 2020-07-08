@@ -1,0 +1,7 @@
+SUDO: requesting
+services:
+    -docker
+
+scripts:
+    -docker build -t subha/designs/node .
+    -docker images subha/designs/node
