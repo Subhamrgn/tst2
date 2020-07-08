@@ -7,7 +7,7 @@ script:
     - docker images subhadesigns/node
 
 before deploy:
-    - docker login -u <username> -p <userpassword>
+    - docker login -u subhamrgn -p Newmac@143
 
 deploy:
     provider: script
