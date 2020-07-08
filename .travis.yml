@@ -5,3 +5,12 @@ services:
 script:
     - docker build -t subhadesigns/node .
     - docker images subhadesigns/node
+
+before deploy:
+    - docker login -u <username> -p <userpassword>
+
+deploy:
+    provider: script
+    script: docker push subhadesigns/node
+    on:
+        branch: master
