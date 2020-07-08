@@ -2,6 +2,6 @@ sudo: requesting
 services:
     - docker
 
-scripts:
+script:
     - docker build -t subhadesigns/node .
     - docker images subhadesigns/node
